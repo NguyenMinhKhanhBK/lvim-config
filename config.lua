@@ -114,3 +114,8 @@ lvim.plugins = {
   {"ojroques/vim-oscyank"},
 }
 lvim.keys.visual_mode["<C-y>"] = ":OSCYank<CR>"
+
+-- Show full path of the current file
+lvim.builtin.lualine.sections.lualine_c = {
+    {"filename", path = 2}
+}
