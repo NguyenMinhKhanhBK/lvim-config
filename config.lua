@@ -119,3 +119,6 @@ lvim.keys.visual_mode["<C-y>"] = ":OSCYank<CR>"
 lvim.builtin.lualine.sections.lualine_c = {
     {"filename", path = 2}
 }
+
+-- Map "\" key to noh command, which unhighlights a searching keyword
+lvim.keys.normal_mode["\\"] = ":noh<CR>"
